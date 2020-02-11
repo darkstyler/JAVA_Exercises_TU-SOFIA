@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.kursova.inventory.controllers.LoginController">
+  <children>
+    <Label layoutX="39.0" layoutY="90.0" prefHeight="36.0" prefWidth="376.0" text="Моля въведете вашите данни!" textFill="#e40101" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="98.0">
+      <font>
+        <Font size="25.0" />
+      </font>
+    </Label>
+    <Label layoutX="60.0" layoutY="140.0" prefHeight="17.0" prefWidth="42.0" text="E-mail:" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="411.0" />
+    <TextField fx:id="emailField" layoutX="109.0" layoutY="136.0" prefWidth="200.0" promptText="Въведете името тук!" />
+    <Label layoutX="60.0" layoutY="185.0" text="Парола" />
+    <PasswordField id="" fx:id="passwordField" layoutX="109.0" layoutY="181.0" prefWidth="200.0" promptText="Въведете паролата тук!" />
+    <Button id="btnLogin" layoutX="257.0" layoutY="220.0" mnemonicParsing="false" onAction="#btnLoginPressed" text="Влез">
+      <font>
+        <Font size="15.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Label fx:id="errorLabel" font="$x1" layoutX="38.0" layoutY="259.0" text="Неуспешно влизане!" textFill="RED" visible="false" />
+    <Label focusTraversable="false" layoutX="50.0" layoutY="22.0" opacity="1.0" prefHeight="49.0" prefWidth="400.0" text="Складово приложение" textAlignment="JUSTIFY" textFill="#008d96" underline="false" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="63.0">
+      <font>
+        <Font name="System Bold" size="33.0" />
+      </font>
+    </Label>
+      <Button layoutX="126.0" layoutY="220.0" mnemonicParsing="false" onAction="#btnRegister" text="Регистрация">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+  </children>
+</AnchorPane>

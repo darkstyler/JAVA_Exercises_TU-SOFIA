@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.kursova.inventory.controllers.OrdersController">
+  <children>
+    <TableView id="" fx:id="tblOrders" focusTraversable="true" layoutX="24.0" layoutY="131.0" onMouseClicked="#openOrder" prefHeight="255.0" prefWidth="600.0" rotate="0.0">
+      <columns>
+        <TableColumn fx:id="idCol" prefWidth="40.0" text="ID" />
+        <TableColumn fx:id="nameCol" maxWidth="5000.0" minWidth="10.0" prefWidth="130.0" text="Име" />
+        <TableColumn fx:id="typeCol" maxWidth="5000.0" minWidth="10.0" prefWidth="70.0" text="Тип:" />
+        <TableColumn fx:id="createdCol" maxWidth="5000.0" minWidth="10.0" prefWidth="100.0" text="Създаден на:" />
+        <TableColumn fx:id="statusCol" maxWidth="5000.0" minWidth="10.0" prefWidth="100.0" text="Статус:" />
+        <TableColumn fx:id="commentCol" maxWidth="5000.0" minWidth="10.0" prefWidth="155.0" text="Коментар:" />
+      </columns>
+    </TableView>
+    <Label layoutX="16.0" layoutY="14.0" text="Поръчки">
+      <font>
+        <Font size="25.0" />
+      </font>
+    </Label>
+    <Button id="btnAddProd" fx:id="btnAdd" layoutX="136.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="30.0" prefWidth="95.0" text="Добави" />
+    <ComboBox fx:id="typeFilterCombo" layoutX="98.0" layoutY="86.0" onAction="#handleFilterByType">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Всички типове" />
+          <String fx:value="buy" />
+          <String fx:value="sell" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label layoutX="16.0" layoutY="90.0" text="Сортирай по:" />
+  </children>
+</AnchorPane>

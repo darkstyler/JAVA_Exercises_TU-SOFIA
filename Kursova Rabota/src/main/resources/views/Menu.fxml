@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="178.0" style="-fx-background-color: #333;&#10;-fx-pref-height: 600px; &#10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.kursova.inventory.controllers.MenuController">
+  <children>
+    <VBox layoutX="14.0" layoutY="14.0" prefHeight="372.0" prefWidth="150.0">
+      <children>
+        <Button fx:id="" mnemonicParsing="false" onAction="#dashboardAction" prefHeight="45.0" prefWidth="150.0" text="Табло" />
+        <Button id="" fx:id="btnProducts" mnemonicParsing="false" onAction="#openProducts" prefHeight="45.0" prefWidth="150.0" text="Продукти">
+          <VBox.margin>
+            <Insets top="10.0" />
+          </VBox.margin>
+        </Button>
+        <Button id="" fx:id="btnGroup" mnemonicParsing="false" onAction="#openGroups" prefHeight="45.0" prefWidth="150.0" text="Групи">
+          <VBox.margin>
+            <Insets top="10.0" />
+          </VBox.margin>
+        </Button>
+        <Button id="" mnemonicParsing="false" onAction="#openOrders" prefHeight="45.0" prefWidth="150.0" text="Поръчки">
+          <VBox.margin>
+            <Insets top="10.0" />
+          </VBox.margin>
+        </Button>
+        <Button id="" mnemonicParsing="false" onAction="#openStock" prefHeight="45.0" prefWidth="150.0" text="Наличност">
+          <VBox.margin>
+            <Insets top="10.0" />
+          </VBox.margin>
+        </Button>
+      </children>
+      <padding>
+        <Insets />
+      </padding>
+    </VBox>
+  </children>
+</AnchorPane>
